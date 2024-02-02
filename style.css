@@ -14,11 +14,10 @@
 }
 
 body{
-    color:black;
+    
    background-color:#fff;
-   width: auto;
-    height: auto;
-    overflow: hidden;
+   
+
    
 }
 
@@ -26,7 +25,10 @@ body{
 
 
 
-
+#page-container{
+    position: relative;
+    min-height: 100vh;
+}
 
 
 nav #icone{
@@ -64,9 +66,10 @@ section{
     padding: 50px;
     align-items: center;
     
+    
 }
 
-div #garrafa{
+div #lata{
     max-width:800px;
     max-height:750px;
     width: auto;
@@ -83,8 +86,9 @@ div #garrafa{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:#004B93;
+    background-color:#000000c2;
     clip-path: circle(50% at bottom right);
+    z-index: -1;
 }
 
 
@@ -119,3 +123,51 @@ transition: .2s;
 span{
     color: red;
 }
+
+#content{
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* altura do rodapé */
+    font-style: italic;
+    text-align: center;
+  }
+
+  #garrafas img{
+    height: 50px;
+    width: 50px;
+  }
+
+  .opcoes-garrafa img{
+    max-width:80px;
+    max-height:75px;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+
+  #todas-opcoes{
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+   align-items: center;
+  }
+
+  .opcoes-garrafa img:hover{
+
+    transform: scale(1.1)
+;
+transition: .2s;
+  }
+
+  footer{
+    color: black;
+  }
+  
+  
+    
