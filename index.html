@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepsi</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body onload="clicarlata2()">
+    
 
-    <div id="circle"></div>
+    <div id="page-container">
+
+    
 
     <header>
 
@@ -38,6 +42,9 @@
                 
                 <li><a href="#">Contato </a></li>
             </ul>
+
+            
+
         </div>
         
 
@@ -45,18 +52,51 @@
     </header>
 
     <main>
+       
 
         
 
-    <section>
+    <section id="content" >
         
-        <div id="txt"><h1>Refresque seu <span>Mundo</span> <br> com PEPSI </h1><br>Não é apenas uma bebida, isso é Pepsi!</div>
+        <div id="txt"><h1 class="textoh1" id="textoh1">Refresque seu <span class="spanMundo" id="vermelho">Mundo</span> <br> com PEPSI </h1><br><p id="paragrafo" class="paragrafo">
+
+        Não é apenas uma bebida, isso é Pepsi!</p>
+            
+            <div id="todas-opcoes">
+
+                
+                <div  class="opcoes-garrafa"  id="lata1" onclick="clicarlata1()"><img src="latapreta (1).png" alt=""></div>
+                <div  class="opcoes-garrafa" id="lata2"onclick="clicarlata2()" ><img src="lataazul.png" alt="" ></div>
+                <div  class="opcoes-garrafa"  id="lata3"onclick="clicarlata3()"><img src="lataverde.png" alt=""></div>
+                
+            </div>
         
-        <div id="img"><img  id="garrafa"  src="pepsi-png-42968.png" alt=""></div>
+        </div>
+
+        
+        
+        <div id="img"><img  id="lata"  src="pepsi-png-42968.png" alt=""></div>
+
+
+        
+        
+
+       
        
     </section>
 
+   
+
+
+    <div> 
+        <footer>&copy;CodEric</footer>
+    </div>
+
+    <div class="circle1" id="circle"></div>
 </main>
+
+</div>
+
     
 </body>
 </html>
